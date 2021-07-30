@@ -1,0 +1,17 @@
+
+# How to start to train models
+
+1. Prepare train data (R1~R3)
+  Download all stage 1 train data files & Move them to '$BASE_DIR/0_data' folder
+    e.g.,  R1.zip should be located in '$BASE_DIR/0_data/R1/R1.zip'
+  Unzip each one of them
+    e.g.,  cd $BASE_DIR/0_data/R1
+           unzip R1.zip
+  Change train data format
+    cd $BASE_DIR/0_data
+    ./convert.sh
+
+2. Start training model for each target variable(v0~v3)
+  e.g., To train model for 'temperature'
+    cd $BASE_DIR/train/v0
+    python run.py
