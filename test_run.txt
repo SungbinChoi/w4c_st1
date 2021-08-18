@@ -1,0 +1,19 @@
+
+# How to make predictions on stage1 heldout testset
+
+1. Prepare test data (R1~R6)
+  Download all stage 1 test data files & Move them to '$BASE_DIR/0_data_heldout' folder
+    e.g.,  R1.zip should be located in '$BASE_DIR/0_data_heldout/R1/R1.zip'
+  Unzip each one of them
+    e.g.,  cd $BASE_DIR/0_data_heldout/R1
+           unzip R1.zip
+
+2. Run predictions
+  cd $BASE_DIR/test
+  ./test.sh
+  ./combine.sh
+  ./zip.sh
+  
+3. Stage 1 core     task test submission file will be at   $BASE_DIR/test/submit
+   Stage 1 transfer task test submission file will be at   $BASE_DIR/test/submit2
+   
